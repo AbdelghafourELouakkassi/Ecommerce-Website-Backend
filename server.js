@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const stripe = require("stripe")(process.env.STRIPE_SK);
-const allowedOrigins = ['https://mystore-frontend-iota.vercel.app'];
+const allowedOrigins = ['https://mystore-frontend-iota.vercel.app','https://mystore-frontend-git-main-abdelghafourelouakkassi.vercel.app'];
 
 app.use(express.json());
 app.use(cors({
