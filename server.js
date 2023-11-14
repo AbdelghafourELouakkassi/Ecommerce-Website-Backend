@@ -32,7 +32,7 @@ app.post("/payment",async(req,res)=>{
         line_items:lineItems,
         mode:"payment",
         success_url:'https://mystore-jxpx.onrender.com/Success',
-        cancel_url:'https://mystore-jxpx.onrender.com//Cancel',
+        cancel_url:'https://mystore-jxpx.onrender.com/Cancel',
     });
 
     res.json({id:session.id})
