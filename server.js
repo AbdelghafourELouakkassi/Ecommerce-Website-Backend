@@ -31,8 +31,8 @@ app.post("/payment",async(req,res)=>{
         payment_method_types:["card"],
         line_items:lineItems,
         mode:"payment",
-        success_url:'https://mystore-jxpx.onrender.com/Success',
-        cancel_url:'https://mystore-jxpx.onrender.com/Cancel',
+        success_url:`${process.env.FRONTEND_API}/Success`,
+        cancel_url:`${process.env.FRONTEND_API}/Cancel`,
     });
 
     res.json({id:session.id})
